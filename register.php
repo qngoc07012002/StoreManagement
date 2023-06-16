@@ -28,8 +28,8 @@ if(isset($_POST['submit'])){
       if($pass != $cpass){
          $message[] = 'confirm password not matched!';
       }else{
-         $insert = $conn->prepare("INSERT INTO `users`(name, email, password, image) VALUES(?,?,?,?)");
-         $insert->execute([$name, $email, $pass, $image]);
+         $insert = $conn->prepare("INSERT INTO `users`(name, email, password, image, user_type) VALUES(?, ?, ?, ?, ?)");
+         $insert->execute([$name, $email, $pass, $image, "admin"]);
 
          if($insert){
             if($image_size > 2000000){
