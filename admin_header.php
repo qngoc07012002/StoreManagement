@@ -21,7 +21,8 @@ if(isset($message)){
     
 
       <nav class="navbar">
-         <a href="admin_products.php">products</a>
+         <a href="admin_products.php">Products</a>
+         <a href="admin_addproduct.php">Add Product</a>
       </nav>
 
       <div class="icons">
