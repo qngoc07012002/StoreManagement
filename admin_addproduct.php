@@ -52,8 +52,6 @@ if(isset($_POST['add_product'])){
 };
 ?>
 
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
