@@ -17,7 +17,7 @@ if(isset($message)){
       <link rel="icon" type="image/png" href="favicon.png">
    <div class="flex">
 
-   <a href="" class="logo">Admin<span>Panel</span></a>
+   <a href="" class="logo">Store<span>Management</span></a>
     
 
       <nav class="navbar">
