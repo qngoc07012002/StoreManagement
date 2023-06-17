@@ -14,10 +14,10 @@ if(isset($message)){
 ?>
 
 <header class="header">
-
+      <link rel="icon" type="image/png" href="favicon.jpg">
    <div class="flex">
 
-       <img src="images/logo.png" alt="Logo">
+       <img src="images/logo.jpg" alt="Logo">
     
 
       <nav class="navbar">
