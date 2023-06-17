@@ -10,14 +10,14 @@ if(isset($message)){
       ';
    }
 }
-  //<a href="admin_page.php" class="logo">Admin<span>Panel</span></a>
+  //
 ?>
 
 <header class="header">
-      <link rel="icon" type="image/png" href="favicon.jpg">
+      <link rel="icon" type="image/png" href="favicon.png">
    <div class="flex">
 
-       <img src="images/logo.jpg" alt="Logo">
+   <a href="admin_page.php" class="logo">Admin<span>Panel</span></a>
     
 
       <nav class="navbar">
