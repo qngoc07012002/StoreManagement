@@ -17,11 +17,11 @@ if(isset($message)){
       <link rel="icon" type="image/png" href="favicon.png">
    <div class="flex">
 
-   <a href="admin_page.php" class="logo">Admin<span>Panel</span></a>
+   <a href="" class="logo">Admin<span>Panel</span></a>
     
 
       <nav class="navbar">
-         <a href="admin_products.php">Products</a>
+         <a href="index.php">Products</a>
          <a href="admin_addproduct.php">Add Product</a>
       </nav>
 
