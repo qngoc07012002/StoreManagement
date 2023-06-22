@@ -82,6 +82,7 @@ if(isset($_POST['add_product'])){
          <input type="text" name="name" class="box" required placeholder="enter product name">
          <select name="category" class="box" required>
             <option value="" selected disabled>Category</option>
+               <option value="Model">Model Toys</option>
                <option value="Control">Control Toys</option>
                <option value="Puzzle">Puzzle Toys</option>
          </select>
