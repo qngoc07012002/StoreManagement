@@ -60,7 +60,7 @@ if(isset($_POST['update_product'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>update products</title>
+   <title>Update Product</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -101,7 +101,7 @@ if(isset($_POST['update_product'])){
       <input type="file" name="image" class="box" accept="image/jpg, image/jpeg, image/png">
       <div class="flex-btn">
          <input type="submit" class="btn" value="update product" name="update_product">
-         <a href="index.php" class="option-btn">go back</a>
+         <a href="index.php" class="delete-btn">Back</a>
       </div>
    </form>
    <?php

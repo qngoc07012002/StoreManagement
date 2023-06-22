@@ -74,26 +74,27 @@ if(isset($_GET['delete'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <link rel="icon" href="images/favicon.png" type="image/png">
+   <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>admin page</title>
+   <title>Admin</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/admin_style.css">
-
 </head>
 <body>
    
 <?php include 'admin_header.php'; ?>
 
 <section class="show-products">
-
-   <h1 class="title">products added</h1>
-
+<br>
+<br>
    <div class="box-container">
 
    <?php
@@ -103,14 +104,14 @@ if(isset($_GET['delete'])){
          while($fetch_products = $show_products->fetch(PDO::FETCH_ASSOC)){  
    ?>
    <div class="box">
-      <div class="price">$<?= $fetch_products['price']; ?>/-</div>
+      <div class="price">$<?= $fetch_products['price']; ?></div>
       <img src="uploaded_img/<?= $fetch_products['image']; ?>" alt="">
       <div class="name"><?= $fetch_products['name']; ?></div>
       <div class="cat"><?= $fetch_products['category']; ?></div>
       <div class="details"><?= $fetch_products['details']; ?></div>
       <div class="flex-btn">
          <a href="admin_update_product.php?update=<?= $fetch_products['id']; ?>" class="option-btn">update</a>
-         <a href="index.php?delete=<?= $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
+         <a href="index.php?delete=<?= $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('Delete this product?');">delete</a>
       </div>
    </div>
    <?php
@@ -123,16 +124,6 @@ if(isset($_GET['delete'])){
    </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-
 
 <script src="js/script.js"></script>
 

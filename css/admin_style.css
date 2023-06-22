@@ -97,7 +97,7 @@
    padding:1rem;
    font-size: 2rem;
    color:var(--white);
-   background-color: var(--red);
+   background-color: blue;
    border-radius: .5rem;
 }
 
@@ -153,43 +153,51 @@
    margin:1rem 0;
 }
 
-.placed-orders .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, 33rem);
-   gap:1.5rem;
-   align-items: flex-start;
-   justify-content:center;
-}
-
-.placed-orders .box-container .box{
-   border:var(--border);
-   box-shadow: var(--box-shadow);
-   background-color: var(--white);
-   border-radius: .5rem;
-   padding:2rem;
-}
-
-.placed-orders .box-container .box p{
-   margin-bottom: 1rem;
-   line-height: 1.5;
-   font-size: 2rem;
-   color:var(--light-color);
-}
-
-.placed-orders .box-container .box p span{
-   color:var(--green);
-}
-
-.placed-orders .box-container .box .drop-down{
+.placed-orders .order-table {
    width: 100%;
-   padding:1.2rem 1.4rem;
-   font-size: 1.8rem;
-   border:var(--border);
-   border-radius: .5rem;
-   background-color: var(--light-bg);
-   margin-bottom: .5rem;
-}
-
+   border-collapse: collapse;
+   border: 1px solid #ddd; /* Thêm viền cho bảng */
+ }
+ 
+ .placed-orders .order-table th,
+ .placed-orders .order-table td {
+   padding: 10px;
+   font-size: 16px; /* Điều chỉnh kích thước font chữ */
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+ }
+ 
+ .placed-orders .order-table th {
+   background-color: #f2f2f2;
+   font-weight: bold;
+ }
+ 
+ .placed-orders .order-table tr:last-child td {
+   border-bottom: none;
+ }
+ 
+ .placed-orders .order-table .empty {
+   text-align: center;
+   padding: 10px;
+ }
+ 
+ .placed-orders .order-table .option-btn,
+ .placed-orders .order-table .delete-btn {
+   padding: 6px 12px; /* Giảm kích thước nút */
+   font-size: 14px;
+   border-radius: 4px;
+   color: white;
+   border: none;
+   display: inline-block; /* Hiển thị dạng inline-block */
+   vertical-align: middle; /* Căn chỉnh theo chiều dọc */
+   margin-left: 5px;
+ }
+ 
+ .placed-orders .order-table .delete-btn:hover,
+ .placed-orders .order-table .option-btn:hover {
+   opacity: 0.8;
+   cursor: pointer;
+ }
 .user-accounts .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, 33rem);

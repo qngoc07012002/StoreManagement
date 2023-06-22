@@ -58,7 +58,7 @@ if(isset($_POST['add_product'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>products</title>
+   <title>Add Product</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -72,18 +72,16 @@ if(isset($_POST['add_product'])){
 <?php include 'admin_header.php'; ?>
 <section class="add-products">
 
-   <h1 class="title">add new product</h1>
+   <h1 class="title">add product</h1>
 
    <form action="" method="POST" enctype="multipart/form-data">
       <div class="flex">
          <div class="inputBox">
          <input type="text" name="name" class="box" required placeholder="enter product name">
          <select name="category" class="box" required>
-            <option value="" selected disabled>select category</option>
-               <option value="vegitables">vegitables</option>
-               <option value="fruits">fruits</option>
-               <option value="meat">meat</option>
-               <option value="fish">fish</option>
+            <option value="" selected disabled>Category</option>
+               <option value="Control">Control Toys</option>
+               <option value="Puzzle">Puzzle Toys</option>
          </select>
          </div>
          <div class="inputBox">

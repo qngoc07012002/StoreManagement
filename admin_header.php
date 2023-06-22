@@ -14,7 +14,7 @@ if(isset($message)){
 ?>
 
 <header class="header">
-      <link rel="icon" type="image/png" href="favicon.png">
+      
    <div class="flex">
 
    <a href="" class="logo">Store<span>Management</span></a>
@@ -23,6 +23,7 @@ if(isset($message)){
       <nav class="navbar">
          <a href="index.php">Products</a>
          <a href="admin_addproduct.php">Add Product</a>
+         <a href="admin_orders.php">Order</a>
       </nav>
 
       <div class="icons">
