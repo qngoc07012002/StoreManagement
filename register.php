@@ -86,10 +86,10 @@ if(isset($message)){
 
    <form action="" enctype="multipart/form-data" method="POST">
       <h3>Register</h3>
-      <input type="text" name="name" class="box" placeholder="enter your name" required>
-      <input type="email" name="email" class="box" placeholder="enter your email" required>
-      <input type="password" name="pass" class="box" placeholder="enter your password" required>
-      <input type="password" name="cpass" class="box" placeholder="confirm your password" required>
+      <input type="text" name="name" class="box" placeholder="Username" required>
+      <input type="email" name="email" class="box" placeholder="Email" required>
+      <input type="password" name="pass" class="box" placeholder="Password" required>
+      <input type="password" name="cpass" class="box" placeholder="Confirm Password" required>
       <input type="file" name="image" class="box" required accept="image/jpg, image/jpeg, image/png">
       <input type="submit" value="register now" class="btn" name="submit">
       <p>Already have an account? <a href="login.php">Login</a></p>
